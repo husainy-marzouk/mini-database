@@ -69,8 +69,6 @@ static ssize_t pread_all(int fd, void* buf, size_t count, off_t offset) {
     return static_cast<ssize_t>(read);
 }
 
-void ssize_t 
-
 static ssize_t pwrite_all(int fd, const void* buf, size_t count, off_t offset) {
     const char* p = reinterpret_cast<const char*>(buf);
     size_t written = 0;
